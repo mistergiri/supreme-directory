@@ -305,7 +305,7 @@ function sd_add_my_account_link($items, $args) {
                     <form name="cus_loginform" method="post" action="<?php echo sd_login_url('');?>" >
 
                         <div class="form_row clearfix">
-                            <input placeholder='<?php _e('Email', 'supreme-directory'); ?>' type="text" name="log" id="user_login"
+                            <input placeholder='<?php _e('Username or Email', 'supreme-directory'); ?>' type="text" name="log" id="user_login"
                                    value="<?php global $user_login;
                                    if (!isset($user_login)) {
                                        $user_login = '';

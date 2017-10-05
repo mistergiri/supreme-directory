@@ -818,7 +818,8 @@ function sup_add_feat_img_head($page)
                         } else {
                             $author_link = '#';
                             $author_name = __('Claim Me', 'supreme-directory');
-                            $entry_author = '<img src="'.get_stylesheet_directory_uri() . "/images/gravatar2.png".'"  height="100" width="100">';
+                            if (!defined('SD_DEFAULT_GRAVATAR_IMAGE')) define('SD_DEFAULT_GRAVATAR_IMAGE', get_stylesheet_directory_uri() . "/images/gravatar2.png");
+                            $entry_author = '<img src="'.SD_DEFAULT_GRAVATAR_IMAGE.'"  height="100" width="100">';
                         }
                     }
                 }
